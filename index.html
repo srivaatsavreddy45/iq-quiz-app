@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Psychometric Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="card">
+            <h1>Advanced IQ Assessment</h1>
+            <p>Look out for the timer, time of completion is taken into consideration</p>
+            <div class="rules">
+                <p><strong>Time Limit:</strong> 30 minutes</p>
+            </div>
+            <button id="start-btn" class="btn">Begin Assessment</button>
+        </div>
+
+        <div id="quiz-screen" class="card hidden">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <span id="progress-text">Question 1 of 35</span>
+                    <div class="progress-bar"><div id="progress-fill"></div></div>
+                </div>
+                <div id="timer" class="timer">30:00</div>
+            </div>
+            
+            <div id="question-container">
+                <p id="question-text">Question text goes here?</p>
+                <div id="options-container" class="options-grid">
+                    </div>
+            </div>
+        </div>
+
+        <div id="results-screen" class="card hidden">
+            <h1>Assessment Concluded</h1>
+            <div class="score-display">
+                <p>Calculated IQ Quotient:</p>
+                <div id="iq-score">--</div>
+            </div>
+            <div class="stats">
+                <p>Verified Accurate Responses: <span id="stat-correct">0</span>/35</p>
+                <p>Total Elapsed Processing Velocity: <span id="stat-time">00:00</span></p>
+                <p id="iq-classification"></p>
+            </div>
+            <button id="restart-btn" class="btn">Re-initialize Assessment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
