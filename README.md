@@ -2,7 +2,6 @@
 
 A responsive, lightweight web application that administers a 35-question cognitive evaluation evaluating fluid intelligence, quantitative sequence reasoning, structural matrices, and formal logic. 
 
-The application utilizes a background timing daemon to track performance metrics within a strict 30-minute processing threshold and dynamically constructs an IQ evaluation output using Gaussian normal distribution profiles.
  https://srivaatsavreddy45.github.io/iq-quiz-app/
 ---
 
