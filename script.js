@@ -154,7 +154,7 @@ function calculateAndDisplayIQ(correctAnswers, timeTakenSeconds) {
     }
 
     zScore += timeModifier;
-    let finalIQ = Math.round(100 + (zScore * 15));
+    let finalIQ = Math.round(100 + (zScore * 8));
 
     if (finalIQ < 40) finalIQ = 40;
     if (finalIQ > 165) finalIQ = 165;
@@ -167,13 +167,13 @@ function calculateAndDisplayIQ(correctAnswers, timeTakenSeconds) {
     document.getElementById('stat-time').textContent = `${minTaken.toString().padStart(2, '0')}:${secTaken.toString().padStart(2, '0')}`;
 
     let classification = "";
-    if (finalIQ >= 145) classification = "Genius / Highly Gifted (Mensa Tier)";
-    else if (finalIQ >= 130) classification = "Very Superior (Gifted)";
-    else if (finalIQ >= 120) classification = "Superior Intelligence";
-    else if (finalIQ >= 110) classification = "High Average";
+    if (finalIQ >= 145) classification = "Highly Gifted ";
+    else if (finalIQ >= 130) classification = "Gifted ";
+    else if (finalIQ >= 120) classification = "High Intelligence";
+    else if (finalIQ >= 110) classification = "Good Intelligence";
     else if (finalIQ >= 90) classification = "Average Baseline";
-    else if (finalIQ >= 80) classification = "Low Average";
-    else classification = "Borderline Cognitive Restraint";
+    else if (finalIQ >= 80) classification = "Below Average";
+    else classification = "Well Below Average";
 
     document.getElementById('iq-classification').textContent = classification;
 }
