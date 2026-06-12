@@ -8,7 +8,7 @@ const questions = [
     { q: "If f(x) = x^3 - 3x^2 + 2x, how many unique real roots exist where f(x) = 0?", o: ["1", "2", "3", "0"], a: 2 },
     { q: "A sequence follows the rule: a_n = 2*a_(n-1) + 3. If the first term a_1 = 1, what is the fourth term a_4?", o: ["13", "29", "25", "31"], a: 1 },
     { q: "What is the next number in the sequence? 2, 9, 28, 65, 126, __", o: ["197", "217", "218", "254"], a: 2 }, // n^3 + 1
-    { q: "A specialized system processes 12 data packets in 4 seconds. How many minutes will it take to process 1080 sheets at this continuous rate?", o: ["5 minutes", "6 minutes", "4.5 minutes", "12 minutes"], a: 1 },
+    { q: "A specialized system processes 12 data packets in 4 seconds. How many minutes will it take to process 1080 sheets at this continuous rate?", o: ["5 minutes", "12 minutes", "4.5 minutes", "6 minutes"], a: 3 },
     { q: "Complete the numerical matrix progression: [4, 9, 25]; [49, 121, 169]; [289, 361, __]", o: ["441", "529", "625", "576"], a: 1 }, // Squares of consecutive primes: 17^2, 19^2, 23^2
 
     
@@ -20,7 +20,7 @@ const questions = [
 
     
     { q: "Find the next integer in the compounding chain: 1, 2, 6, 24, 120, 720, __", o: ["4320", "5040", "1440", "2880"], a: 1 }, // Factorials
-    { q: "If 5 parallel horizontal lines are cleanly intersected by 4 parallel vertical lines, how many distinct quadrilaterals are created?", o: ["20", "40", "60", "120"], a: 2 }, // C(5,2) * C(4,2) = 10 * 6 = 60
+    { q: "If 5 parallel horizontal lines are cleanly intersected by 4 parallel vertical lines, how many distinct quadrilaterals are created?", o: ["20", "40", "120", "60"], a: 3 }, // C(5,2) * C(4,2) = 10 * 6 = 60
     { q: "Find the missing structural variable in the set: [3, 8, 15], [24, 35, 48], [63, 80, __]", o: ["95", "99", "100", "121"], a: 1 }, // n^2 - 1
     { q: "If a logical conditional statement 'If P then Q' is true, which of the following variations is automatically true?", o: ["If Q then P", "If not P then not Q", "If not Q then not P", "P is always true"], a: 2 }, // Contrapositive
     { q: "Identify the pattern anomaly that breaks the structural sequence rule: 3, 5, 11, 14, 17, 21", o: ["14", "11", "21", "17"], a: 0 }, 
@@ -28,7 +28,7 @@ const questions = [
   
     { q: "Row 1: [2, 3, 13] | Row 2: [4, 5, 41] | Row 3: [6, 7, __]", o: ["55", "85", "72", "91"], a: 1 }, // a^2 + b^2
     { q: "If a circle's radius is scaled up uniformly by 50%, by what exact percentage does its total area expand?", o: ["50%", "100%", "125%", "225%"], a: 2 }, // 1.5^2 = 2.25 -> 125% increase
-    { q: "Twelve years ago, John was exactly 1/3 the age of his father. In six years, he will be exactly 1/2 his father's age. How old is John right now?", o: ["24", "30", "18", "42"], a: 1 },
+    { q: "Twelve years ago, John was exactly 1/3 the age of his father. In six years, he will be exactly 1/2 his father's age. How old is John right now?", o: ["24", "42", "18", "30"], a: 3 },
     { q: "Predict the final number in the arithmetic triangle accumulation step: 0, 1, 3, 6, 10, 15, __", o: ["20", "21", "22", "25"], a: 1 },
     { q: "Which mathematical set element does not mathematically share the same category property? [16, 25, 36, 48, 64]", o: ["16", "36", "48", "64"], a: 2 }, // Non-square element
 
@@ -44,7 +44,7 @@ const questions = [
     { q: "Find the next progression step value: 10, 11, 23, 71, 287, __", o: ["1439", "1435", "1148", "1256"], a: 0 }, // *1+1, *2+1, *3+2, *4+3, *5+4 => 287*5 + 4 = 1439
     { q: "Two guards stand at a gate. One always lies; one always tells the truth. To find the safe path, you must ask one guard a single question. Which question works?", o: ["Which gate will the other guard say is safe?", "Are you a truth-teller?", "Is your gate safe?", "Which gate do you like?"], a: 0 },
     { q: "Calculate the exact cumulative sum of all integers from 1 up to 40 inclusive.", o: ["800", "820", "840", "780"], a: 1 }, // (40 * 41)/2 = 820
-    { q: "If a perfectly symmetrical binary tree structure contains 4 completely filled generational levels, what is the absolute total node count?", o: ["7", "15", "31", "16"], a: 1 }, // 1+2+4+8 = 15
+    { q: "If a perfectly symmetrical binary tree structure contains 4 completely filled generational levels, what is the absolute total node count?", o: ["7", "16", "31", "15"], a: 3 }, // 1+2+4+8 = 15
     { q: "Identify the mathematical function operating in this set pairing: [84, 14 -> 6], [105, 15 -> 7], [144, 12 -> __]", o: ["9", "11", "12", "14"], a: 2 } // A / B = C
 ];
 
