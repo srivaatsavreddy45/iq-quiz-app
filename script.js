@@ -1,7 +1,7 @@
 // Advanced 35-Question Bank (100% Logic, Math, and Pattern Recognition)
 const questions = [
     { q: "Four people (A, B, C, D) sit in a row. A cannot sit next to B. C sits immediately to the right of B. If D sits in the first seat on the left, who sits in the second seat?", o: ["A", "B", "C", "Cannot be determined"], a: 0 },
-    { q: "In a stable, there are horses and humans. Counting heads gives 15; counting legs gives 50. How many horses are in the stable?", o: ["8", "10", "12", "7"], a: 1 },
+    { q: "In a stable, there are horses and humans. Counting heads gives 15; counting legs gives 50. How many horses are in the stable?", o: ["10", "8", "12", "7"], a: 0 },
     { q: "A lying game: Liam always lies on Fridays, Saturdays, and Sundays. He tells the truth on all other days. Today he says: 'I lied yesterday, and I will lie again tomorrow.' What day of the week is it?", o: ["Friday", "Monday", "Thursday", "Sunday"], a: 2 },
     { q: "Six boxes are stacked. Red is above Green but below Blue. Yellow is below Green. Orange is between Blue and Red. Which box is at the very top?", o: ["Red", "Blue", "Orange", "Yellow"], a: 1 },
     { q: "If it takes 5 machines 5 minutes to produce 5 widgets, how many minutes does it take 100 machines to produce 100 widgets?", o: ["100 minutes", "20 minutes", "5 minutes", "1 minute"], a: 2 },
@@ -33,7 +33,7 @@ const questions = [
     { q: "Which mathematical set element does not mathematically share the same category property? [16, 25, 36, 48, 64]", o: ["16", "36", "48", "64"], a: 2 }, // Non-square element
 
     
-    { q: "If a custom mathematical operator '#' means (A^2 - B), find the value of X when: (4 # 3) # X = 40.", o: ["7", "9", "11", "13"], a: 1 }, // (16-3)=13. 13^2 - X = 40 -> 169 - X = 40 -> X = 129. Wait let's adjust array index choice options.
+    { q: "If a custom mathematical operator '#' means (A^2 - B), find the value of X when: (4 # 3) # X = 160.", o: ["9", "7", "11", "13"], a: 0 }, // (16-3)=13. 13^2 - X = 160 -> 169 - X = 160 -> X = 9
     { q: "Let the operator '#' mean (A^2 - B). Solve for X if (4 # 3) # X = 160.", o: ["7", "9", "11", "13"], a: 1 }, // 13 # X = 160 -> 169 - X = 160 -> X = 9
     { q: "A clock loses exactly 3 minutes every hour. It was set correctly at 12:00 PM. What time will it display when the true actual time is 8:00 PM?", o: ["7:36 PM", "7:40 PM", "7:44 PM", "8:24 PM"], a: 0 },
     { q: "If a fair coin is tossed 4 consecutive times, what is the exact mathematical probability of landing exactly 3 heads?", o: ["1/4", "3/8", "1/8", "1/2"], a: 0 }, // 4/16 = 1/4
